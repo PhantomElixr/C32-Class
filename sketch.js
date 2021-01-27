@@ -94,7 +94,7 @@ function keyPressed(){
 }
 
 async function getTime(){
-    var timeURL = await fetch('http://worldtimeapi.org/api/timezone/America/Edmonton');
+    var timeURL = await fetch('https://worldtimeapi.org/api/timezone/America/Edmonton');
     var timeJSON = await timeURL.json();
     console.log(timeJSON);
     var timeDate = timeJSON.datetime;
